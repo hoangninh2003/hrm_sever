@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { UsersIcon, DocumentIcon } from '@heroicons/react/24/outline'; // Cập nhật đường dẫn
+import { UsersIcon, DocumentIcon } from '@heroicons/react/24/outline';
 import './admin.css';
 
 const LayoutAdmin = ({ children }: { children: React.ReactNode }) => {
@@ -24,7 +24,6 @@ const LayoutAdmin = ({ children }: { children: React.ReactNode }) => {
         </nav>
       </aside>
 
-      {/* Main content */}
       <div className="flex-1 p-6">
         <header className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-semibold">Trang quản trị</h2>

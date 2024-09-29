@@ -2,27 +2,23 @@ import LayoutAdm from "@/pages/admin/layout-adm";
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 const EmployeeList = () => {
-  // Dữ liệu mẫu danh sách nhân viên
   const employees = [
     { id: 1, name: "Nguyễn Văn A", phone: "0123456789", dob: "01/01/1990", cccd: "123456789012", position: "Nhân viên" },
     { id: 2, name: "Trần Thị B", phone: "0987654321", dob: "02/02/1985", cccd: "123456789013", position: "Quản lý" },
     { id: 3, name: "Lê Văn C", phone: "0123456780", dob: "03/03/1992", cccd: "123456789014", position: "Nhân viên" },
-    // Thêm nhân viên khác nếu cần
   ];
 
-  const handleDuyet = (id) => {
+  const handleDuyet = (id: number) => {
     console.log(`Duyệt phép cho nhân viên với ID: ${id}`);
-    // Thêm logic xử lý cho "Duyệt phép" ở đây
   };
 
-  const handleKhongDuyet = (id) => {
+  const handleKhongDuyet = (id: number) => {
     console.log(`Nghỉ không phép cho nhân viên với ID: ${id}`);
-    // Thêm logic xử lý cho "Nghỉ không phép" ở đây
   };
 
   return (
     <LayoutAdm>
-      <h1 className="text-2xl font-bold mb-4">Danh sách nhân viên</h1>
+      <h1 className="text-2xl font-bold mb-4">Danh sách duyệt phép</h1>
       <table className="min-w-full bg-white border border-gray-300">
         <thead>
           <tr className="bg-gray-200">

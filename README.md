@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dự Án Quản Lý Nhân Sự (HRM)
 
-## Getting Started
+## Mô Tả
+Dự án này là một hệ thống quản lý nhân sự (HRM) cho phép quản lý thông tin nhân viên, yêu cầu nghỉ phép, và bảng lương. Hệ thống cung cấp giao diện người dùng thân thiện và dễ sử dụng cho cả quản trị viên và nhân viên.
 
-First, run the development server:
+## Cài Đặt
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Yêu Cầu Hệ Thống
+- Node.js (v14 trở lên)
+- MongoDB (đã cài đặt và đang chạy)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Chạy Trên Môi Trường
+Dự án này đã được chạy trên môi trường:
+Windows 11
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Lưu Ý
+Đảm bảo rằng MongoDB đang chạy và có thể truy cập được từ địa chỉ đã cấu hình trong tệp .env.
+Kiểm tra quyền truy cập mạng của máy để tránh các vấn đề khi kết nối tới MongoDB.
+Nếu bạn gặp lỗi liên quan đến kết nối, hãy kiểm tra lại chuỗi kết nối trong tệp .env.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Các Tính Năng Chính
+Quản lý thông tin nhân viên
+Xử lý yêu cầu nghỉ phép
+Theo dõi bảng lương và thông tin liên quan

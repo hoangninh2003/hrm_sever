@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Khung cho phần thông tin cá nhân */
+  .info-container {
+    border: 1px solid #dcdcdc; /* Đường viền */
+    border-radius: 8px; /* Bo góc */
+    padding: 16px; /* Padding bên trong */
+    background-color: #ffffff; /* Màu nền */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+  }
+
+  .info-header {
+    border-bottom: 1px solid #dcdcdc; /* Đường viền dưới */
+    padding-bottom: 8px; /* Padding dưới */
+    margin-bottom: 16px; /* Khoảng cách dưới */
+    font-size: 1.25rem; /* Kích thước chữ tiêu đề */
+    font-weight: bold; /* In đậm */
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột */
+    gap: 16px; /* Khoảng cách giữa các ô */
+  }
+
+  .info-item {
+    padding: 12px; /* Padding bên trong từng ô */
+    background-color: #f7f7f7; /* Màu nền ô */
+    border-radius: 4px; /* Bo góc ô */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Đổ bóng nhẹ cho ô */
+  }
+}
